@@ -6,7 +6,7 @@ ul{padding-left:20px}a{color:inherit}nav{margin-bottom:24px;font-size:14px}hr{bo
 <body>
 <nav><a href="./">지원 / Support</a> · <a href="#ko">한국어</a> · <a href="#en">English</a></nav>
 <section id="ko" lang="ko"><h1>개인정보 처리방침</h1>
-<p>시행일: 2026-11-09<br>앱: Tavelo<br>운영자: Code Black Inc.<br>문의: <a href="mailto:dr.coton@gmail.com">dr.coton@gmail.com</a></p>
+<p>시행일: 2026-11-10<br>앱: Tavelo<br>운영자: Code Black Inc.<br>문의: <a href="mailto:dr.coton@gmail.com">dr.coton@gmail.com</a></p>
 <h2>요약</h2>
 <ul><li>칠한 그림은 기기에 저장됩니다. 앱은 이를 우리 서버로 보내지 않습니다.</li><li>앱에는 계정, 자체 분석, 자체 오류 수집이 없습니다.</li><li>광고는 Google AdMob이 보여 줍니다. 이를 위해 Google이 데이터를 처리합니다.</li><li>구매는 Apple이 처리합니다.</li><li>잠긴 도안의 그림 파일은 Amazon CloudFront(Amazon Web Services)에서 내려받습니다. 이때 기기의 IP 주소가 Amazon에 전송되고 기록될 수 있습니다.</li><li>앱은 기기의 위치 권한을 요청하지 않습니다. Google이 IP 주소로 대략적 위치를 추정할 수 있습니다.</li></ul>
 <h2>기기에 저장되는 것</h2>
@@ -15,15 +15,17 @@ ul{padding-left:20px}a{color:inherit}nav{margin-bottom:24px;font-size:14px}hr{bo
 <h2>사진</h2>
 <p>'사진에 저장'을 누르면 사진 보관함에 그림을 추가할 권한을 묻습니다. 앱은 추가만 할 수 있고 보관함을 읽지 않습니다. 저장되는 이미지는 현재 그림만 담습니다.</p>
 <h2>도안 파일 내려받기 (Amazon CloudFront)</h2>
-<p>무료 도안은 앱에 들어 있습니다. 나머지 도안의 그림 파일은 그 도안이 열릴 때(광고를 보고 열 때, 전체 도안을 구매한 직후, 처음 열 때) Amazon Web Services의 Amazon CloudFront에서 내려받습니다. 이때 기기의 IP 주소와 요청 정보(요청한 파일, 시각, 앱 이름과 운영체제 버전이 담긴 기본 요청 머리글)가 Amazon에 전송되고 CloudFront 기록에 남을 수 있습니다. 요청에는 계정, 광고 식별자, 칠한 그림이 들어가지 않습니다. 이 정보는 파일을 전하고 서비스가 제대로 도는지 확인하는 데에만 쓰입니다. Amazon 방침: https://aws.amazon.com/privacy/</p>
+<p>무료 도안은 앱에 들어 있습니다. 나머지 도안의 그림 파일은 그 도안이 열릴 때(이번 주 도안을 열 때, 전체 도안을 구매한 직후, 이미 열린 도안을 처음 열 때) Amazon Web Services의 Amazon CloudFront에서 내려받습니다. 이때 기기의 IP 주소와 요청 정보(요청한 파일, 시각, 앱 이름과 운영체제 버전이 담긴 기본 요청 머리글)가 Amazon에 전송되고 CloudFront 기록에 남을 수 있습니다. 요청에는 계정, 광고 식별자, 칠한 그림이 들어가지 않습니다. 이 정보는 파일을 전하고 서비스가 제대로 도는지 확인하는 데에만 쓰입니다. Amazon 방침: https://aws.amazon.com/privacy/</p>
 <p>받은 파일은 앱 저장 공간에 남아 다시 받지 않으며, 기기 설정에 따라 iCloud나 컴퓨터 백업에 포함될 수 있습니다.</p>
 <h2>광고 (Google AdMob)</h2>
-<p>도안 두 장을 칠하기 시작한 뒤부터, 시작하지 않은 도안을 열 때 전체 화면 광고가 나올 수 있고 보통 10분에 한 번 이하입니다. 칠하는 중과 이어서 칠할 때는 나오지 않습니다. 도안 묶음이나 광고 제거 중 하나라도 구매하면 광고가 나오지 않고 광고 요청도 보내지 않습니다.</p>
+<p>광고는 두 가지입니다.</p>
+<ul><li>보상형 광고: 방마다 한 장 있는 광고 도안의 시작 화면에서 '광고 1편 보고 이 그림 열기'를 누를 때만 나옵니다.</li><li>전체 화면 광고: 도안 두 장을 칠하기 시작한 뒤부터, 시작하지 않은 도안의 '시작'을 누를 때와 다 칠한 그림의 전시를 닫고 돌아갈 때 나올 수 있습니다.</li></ul>
+<p>두 광고를 합쳐 10분에 한 번 이하입니다. 앱을 켤 때나 앱으로 돌아올 때, 칠하는 중, 이어서 칠할 때, 사용법 연습 중에는 나오지 않습니다. '도안 100장 + 광고 없음'을 구매하면 광고가 나오지 않고 광고 요청도 보내지 않습니다.</p>
 <p>광고를 보여 주기 위해 Google Mobile Ads SDK와 Google이 다음을 처리할 수 있습니다. 기기 식별자(추적을 허용하면 광고 식별자 포함), IP 주소와 이로 추정한 대략적 위치, 본 광고와 광고에 대한 반응, 앱 성능과 오류 정보. Google은 자사 개인정보처리방침에 따라 처리합니다: https://policies.google.com/privacy</p>
-<p>도안 한 장을 칠하기 시작한 뒤 시작하지 않은 도안을 열 때, 첫 광고 전에:</p>
+<p>첫 광고를 요청하기 전, 광고 버튼을 처음 누를 때와 도안 한 장을 칠하기 시작한 뒤 시작하지 않은 도안의 '시작'을 누를 때 중 먼저 오는 때에:</p>
 <ul><li>법이 요구하는 지역(EEA, 영국 등)에서는 Google User Messaging Platform의 동의 화면이 선택을 묻습니다. 나중에 홈 화면 맨 아래 '광고 개인정보 설정'(표시되는 경우)에서 바꿀 수 있습니다.</li><li>추적 허용 여부를 아직 답하지 않았고 iOS가 허용하면, 다른 회사의 앱과 웹사이트에 걸친 추적을 허용할지 iOS가 묻습니다. 위 동의 화면의 선택이 기기 정보 저장과 접근을 허용하지 않으면 묻지 않습니다. 거부해도 광고는 나올 수 있으나 그 식별자를 쓰지 않습니다. 앱 기능은 같습니다.</li></ul>
 <p>광고 SDK는 이 동의 절차를 마치기 전에는 시작하지 않습니다.</p>
-<p>동의가 필요한 지역인지 확인하려고 앱이 홈 화면을 열 때 Google User Messaging Platform에 조회합니다. 구매한 사람도 같습니다. 구매한 사람에게는 광고를 요청하지 않습니다. 구매 전이고 동의 절차를 이미 마쳤다면, 다음 도안을 열 때 보여 줄 광고를 이때 미리 요청할 수 있습니다.</p>
+<p>동의가 필요한 지역인지 확인하려고 앱이 홈 화면을 열 때 Google User Messaging Platform에 조회합니다. 구매한 사람도 같습니다. 이 조회는 광고 요청이 아닙니다. 구매한 사람에게는 광고를 요청하지 않습니다. 구매 전이고 동의 절차를 이미 마쳤다면, 광고 도안이나 시작하지 않은 도안의 시작 화면, 칠하는 화면이 열릴 때 뒤에 보여 줄 광고를 미리 요청할 수 있습니다.</p>
 <p>부적절한 광고를 봤다면 홈 화면 맨 아래 '문의·광고 신고'로 알려 주세요.</p>
 <h2>구매</h2>
 <p>구매와 복원은 Apple App Store를 거칩니다. 결제와 Apple ID는 Apple이 처리합니다. 앱은 구매한 상품의 식별자와 구매가 유효한지, 취소됐는지를 확인합니다. 결제 정보는 받지 않습니다. Apple 방침: https://www.apple.com/legal/privacy/</p>
@@ -41,24 +43,26 @@ ul{padding-left:20px}a{color:inherit}nav{margin-bottom:24px;font-size:14px}hr{bo
 <p>방침이 바뀌면 맨 위 날짜가 바뀝니다.</p></section>
 <hr>
 <section id="en" lang="en"><h1>Privacy Policy</h1>
-<p>Effective: 2026-11-09<br>App: Tavelo<br>Operator: Code Black Inc.<br>Contact: <a href="mailto:dr.coton@gmail.com">dr.coton@gmail.com</a></p>
+<p>Effective: 2026-11-10<br>App: Tavelo<br>Operator: Code Black Inc.<br>Contact: <a href="mailto:dr.coton@gmail.com">dr.coton@gmail.com</a></p>
 <h2>Summary</h2>
 <ul><li>Your paintings are stored on your device. The app does not send them to our servers.</li><li>The app has no account, no analytics and no crash reporting of its own.</li><li>Ads are served by Google AdMob. Google processes data to show them.</li><li>Purchases are handled by Apple.</li><li>The picture files of locked pages are downloaded from Amazon CloudFront (Amazon Web Services). Your device's IP address is sent to Amazon when this happens and may be logged.</li><li>The app does not ask for your device's location. Google can estimate a coarse location from your IP address.</li></ul>
 <h2>What is stored on your device</h2>
 <ul><li>Your painting progress and the small preview image of each page. They are saved in the app's storage on the device.</li><li>Downloaded page files (see "Downloading pages").</li><li>A value for ad timing: when the last ad was shown.</li><li>Whether the ad consent steps have been done.</li><li>The pages you restarted from the beginning.</li><li>Your Guide setting for number coloring.</li><li>The way of coloring you picked in How to use (Numbers, Fill or Brush), used as the default for new pages.</li><li>Whether you have seen How to use and the tips.</li><li>The consent values kept by Google User Messaging Platform.</li></ul>
 <p>We cannot see this data, and the app does not send it to our servers. Depending on your device settings, it can be included in iCloud or computer backups.</p>
 <h2>Downloading pages (Amazon CloudFront)</h2>
-<p>The free pages are in the app. The picture files of the other pages are downloaded from Amazon CloudFront, part of Amazon Web Services, when a page opens: when you watch an ad to open it, right after you buy all pages, or when you first open it. Your device's IP address and the request details (the file asked for, the time, and the standard request header with the app's name and the operating system version) are sent to Amazon and may be recorded in CloudFront's logs. The request carries no account, no advertising identifier and none of your paintings. This information is used only to deliver the files and to check that the service works. Amazon's policy: https://aws.amazon.com/privacy/</p>
+<p>The free pages are in the app. The picture files of the other pages are downloaded from Amazon CloudFront, part of Amazon Web Services, when a page opens: when you open the page of the week, right after you buy all pages, or when you first open a page that is already open to you. Your device's IP address and the request details (the file asked for, the time, and the standard request header with the app's name and the operating system version) are sent to Amazon and may be recorded in CloudFront's logs. The request carries no account, no advertising identifier and none of your paintings. This information is used only to deliver the files and to check that the service works. Amazon's policy: https://aws.amazon.com/privacy/</p>
 <p>Downloaded files stay in the app's storage so they are not downloaded again. Depending on your device settings, they can be included in iCloud or computer backups.</p>
 <h2>Photos</h2>
 <p>When you tap Save to Photos, the app asks for permission to add a picture to your photo library. The app can only add. It does not read your library. The saved image contains only the current picture.</p>
 <h2>Ads (Google AdMob)</h2>
-<p>Once you have started two pages, a full-screen ad can appear when you open a page you have not started, normally at most once every 10 minutes. No ads appear while you color or when you continue a page. If you buy anything, a page set or Remove Ads, the app shows no ads and sends no ad requests.</p>
+<p>There are two kinds of ads.</p>
+<ul><li>Rewarded ads: only when you tap "Watch one ad to open this page" on the start screen of a room's ad page (one in each room).</li><li>Full-screen ads: once you have started two pages, one can appear when you tap Start on a page you have not started, and when you close a finished picture's wall to go back.</li></ul>
+<p>Together they appear at most once every 10 minutes. No ads appear when the app opens or when you come back to it, while you color, when you continue a page, or during the How to use practice. If you buy All 100 Pages, No Ads, the app shows no ads and sends no ad requests.</p>
 <p>To show ads, the Google Mobile Ads SDK and Google can process: device identifiers (including the advertising identifier if you allow tracking), IP address and the coarse location derived from it, which ads were shown and how you interacted with them, and app performance and crash information. Google acts under its own privacy policy: https://policies.google.com/privacy</p>
-<p>After you have started one page, when you open a page you have not started, before the first ad:</p>
+<p>Before the first ad is requested, at whichever comes first: your first tap on the ad button, or your tap on Start on a page you have not started after you have started one page:</p>
 <ul><li>Where the law requires it (for example the EEA, UK), a consent form from Google's User Messaging Platform asks for your choice. You can change it later from "Ad privacy settings" at the bottom of the home screen when it is offered.</li><li>If you have not answered yet and iOS allows it, iOS asks whether the app may track you across other companies' apps and websites. It does not ask if your choice in the consent form above does not allow storing and accessing information on the device. If you decline, ads can still appear but are not based on that identifier. The app works the same either way.</li></ul>
 <p>The ad SDK does not start before this consent step has been completed.</p>
-<p>To check whether consent is needed in your region, the app contacts Google User Messaging Platform when the home screen opens, including after a purchase. No ad is requested for anyone who has made a purchase. If you have not purchased and the consent steps are already done, an ad for a later page may be requested in advance at that point.</p>
+<p>To check whether consent is needed in your region, the app contacts Google User Messaging Platform when the home screen opens, including after a purchase. This check is not an ad request. No ad is requested for anyone who has made the purchase. If you have not purchased and the consent steps are already done, an ad may be requested in advance when an ad page's start screen, a new page's start screen or the coloring screen opens; it is not shown then.</p>
 <p>If you see an inappropriate ad, tell us with "Contact · Report an ad" at the bottom of the home screen.</p>
 <h2>Purchases</h2>
 <p>Purchases and restores go through Apple's App Store. Apple processes your payment and Apple ID. The app checks which products you bought and whether each purchase is valid or has been revoked. We do not receive your payment details. Apple's policy: https://www.apple.com/legal/privacy/</p>
